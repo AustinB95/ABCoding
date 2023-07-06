@@ -1,0 +1,234 @@
+*{
+    Margin:0;
+    padding: 0;
+    font-family:sans-serif;
+}
+
+.main{
+    width:100%;
+    height:100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #080808, #365874);    
+
+}
+
+nav{
+    width: 98%;
+    position: sticky;
+    margin: 0px auto;
+    z-index: 1;
+    display: flex;
+    /* align-items: center; */
+}
+
+.logo{
+flex-basis: 10%;
+}
+
+.logoText{
+    position:fixed;
+    padding-top: 11px;
+    padding-left: 112px;
+    font-size: 19px;
+    font-weight: bolder;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.logo img{
+width: 100px;
+}
+
+.nav-links{
+    flex:1;
+    text-align: right;
+    padding: 10px;
+    
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline;
+    margin: 10px;
+    
+}
+
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+
+
+
+/* adjust the circle position here */
+.information{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0.6%;
+    left: 27%;
+    transform: translate(-50%);
+}
+#circle{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    /* background: #3f00ee; */
+    transform: rorate(0deg);
+    transition: 1s;
+}
+.feature img{
+    width: 100px;
+    height: 100px;
+}
+.feature{
+    position: absolute;
+    display: flex;
+    color: #08eb2e;
+}
+.feature div{
+    margin-left: 11px;
+}
+.feature div p{
+    margin-top: 2px;
+}
+
+.one{
+    top: 500px;
+    right: -60px;
+}
+.two{
+    top: 30px;
+    right: 290px;
+    transform: rotate(-90deg);
+}
+.three{
+    top: 350px;
+    right: 775px;
+    transform: rotate(-180deg);
+}
+.four{
+    top:   870px;
+    right: 380px;
+    transform: rotate(-270deg);
+}
+.quadMain{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 24%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.controls{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.controls h3{
+    padding: 10px ;
+    color: #fff;
+}
+
+#topButton{
+    width: 50px;
+}
+#bottomButton{
+    width: 50px;
+    rotate: 180deg;
+}
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid  ;
+    border-left: 680px solid ;
+    
+    border-bottom: 500px solid ;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    z-index: 1;
+
+     border-image: linear-gradient(to right, #080808, hwb(207 10% 75%))500;   
+    
+}
+
+
+/* ---------------Contact Page -------------------------  */
+
+.container{
+
+    padding-left: 630px;
+}
+
+
+form{
+
+background: #424242;
+display: flex;
+flex-direction: column;
+padding: 2vw 4vw;
+width: 90%;
+max-width: 600px;
+border-radius: 10px;
+}
+
+form h3{
+
+    color: #aaaaaa;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin:2px 0;
+    padding: 10px;
+    outline: none;
+    background: rgb(243, 243, 243);
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+form button{
+    padding: 15px;
+    background: #c0c0c0;
+    color: rgb(5, 6, 8);
+    font-size: 16px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 10px auto 0;
+    border-radius: 30px;
+}
+/* ---------------End of Contact Page -------------------------  */
+
+
+
+
+
+
+
+
+
+/* h1 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(90deg, #ffffff, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+
+  } */
+
+
+

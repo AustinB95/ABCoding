@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact Me</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+      <div class="main">
+        <nav> <!-- This is a div container-->
+            
+            <div class="logo">
+                <img src="/images/Logo.jpg">    
+            </div>
+
+            <div class="logoText">
+                <p>Everything Raptor</p>
+            </div>
+
+            <div class="nav-links">
+                <ul>
+                    <li><a href="/Index.html">Home</a></li>
+                    <li><a href="link">Accessories</a></li>
+                    <li><a href="link">Something</a></li>
+                    <li><a href="/ContactMe.html">Contact Me</a></li>
+                </ul>
+            </div>
+
+        </nav> <!-- End of Divcontainer -->
+
+
+
+        <div class="container">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h3> Write me a message!</h3>
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="phone" placeholder="Phone Number" required>
+                <textarea id="message" rows="4" placeholder="How can i help you?"></textarea>
+                <button type="submit">Send!</button>
+            </form>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--      Keep Visuals above here                -->
+    </div>
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+                Email.send({
+                SecureToken : "223ad817-256f-40b3-889e-f2120fdc9f28",
+                To : 'steelice7@gmail.com',
+                From : "steelice7@gmail.com",
+                Subject : "Msg from EverythingRaptor Site",
+                Body : "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Phone Number: " + document.getElementById("phone").value
+                    + "<br> Message: " + document.getElementById("message").value
+            }).then(
+            message => alert("Message Sent Successfully!")
+        
+            );
+        }
+
+    </script>
+    </body>
+</html>
